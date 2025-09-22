@@ -1,0 +1,56 @@
+# OS / editors
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.log
+.vscode/
+.idea/
+
+# Node / frontend
+node_modules/
+.npm/
+.parcel-cache/
+.cache/
+.dist/
+frontend/.parcel-cache/
+frontend/.cache/
+frontend/.dist/
+frontend/dist/
+
+# Build outputs
+/dist/
+/build/
+*.map
+
+# Env / secrets
+.env
+.env.*
+*.env.local
+
+# Python
+__pycache__/
+backend/__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+.venv/
+venv/
+ENV/
+backend/.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+!TTYD.ipynb
+
+# Coverage / test
+.coverage
+.pytest_cache/
+
+# OS trash
+$RECYCLE.BIN/
+**/.Trash-*/

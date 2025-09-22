@@ -1,0 +1,33 @@
+# Core dependencies
+fastapi==0.104.1
+python-dotenv==1.0.0
+uvicorn[standard]
+python-multipart
+
+# AI/ML dependencies
+
+langchain==0.0.350
+pinecone-client==3.1.0
+sentence-transformers==2.2.2
+langchain-huggingface
+huggingface-hub==0.22.2
+protobuf==4.25.3
+
+# Data processing
+pandas==2.1.4
+numpy==1.24.3
+plotly==5.17.0
+matplotlib==3.8.2
+seaborn==0.13.1
+
+# Utilities
+python-multipart==0.0.6
+jinja2==3.1.2
+aiofiles==23.2.1
+streamlit==1.37.0
+altair==5.2.0
+
+# Development
+pytest==7.4.3
+black==23.11.0
+flake8==6.1.0

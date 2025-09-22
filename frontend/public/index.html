@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TalkToADatabase Prototype</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root{--bg:#0b1020;--surface:#121936;--muted:#8b95b7;--text:#e6e9f5;--primary:#6ea8fe;--primary-strong:#3b82f6;--danger:#ef4444;--ring:rgba(110,168,254,.35)}
+      *{box-sizing:border-box}
+      html,body,#root{height:100%}
+      body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:radial-gradient(1200px 700px at 10% -10%,#1a2252 0%,transparent 60%),radial-gradient(900px 600px at 110% -10%,#1a2252 0%,transparent 60%),var(--bg);color:var(--text)}
+      .container{max-width:1000px;margin:0 auto;padding:24px}
+      .header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+      .title{font-size:22px;font-weight:700;letter-spacing:.2px}
+      .subtitle{font-size:13px;color:var(--muted)}
+      .panel{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:16px;backdrop-filter:blur(6px)}
+      .stack{display:grid;gap:12px}
+      .textarea{width:100%;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);color:var(--text);border-radius:10px;padding:12px 14px;resize:vertical;min-height:90px;outline:none;transition:.15s}
+      .textarea::placeholder{color:#9aa3c7}
+      .textarea:focus{border-color:var(--primary);box-shadow:0 0 0 4px var(--ring)}
+      .row{display:flex;gap:10px;align-items:center}
+      .btn{background:linear-gradient(180deg,var(--primary) 0%,var(--primary-strong) 100%);color:white;border:none;border-radius:10px;padding:10px 14px;font-weight:600;cursor:pointer;transition:transform .05s ease,filter .15s ease;box-shadow:0 6px 24px rgba(87,142,255,.3)}
+      .btn:hover{filter:saturate(1.1) brightness(1.02)}
+      .btn:active{transform:translateY(1px)}
+      .btn[disabled]{opacity:.6;cursor:not-allowed;box-shadow:none}
+      .error{color:var(--danger);font-size:13px}
+      .hint{font-size:12px;color:var(--muted)}
+      .card{margin-top:16px;padding:12px;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.08);border-radius:14px}
+      #vis{width:100%;min-height:520px;overflow:auto}
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="../src/index.jsx"></script>
+  </body>
+</html>
